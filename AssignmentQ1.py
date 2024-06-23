@@ -47,3 +47,27 @@ elif place == "cave":
         print("Great you can see the treasure clearly now!")
     else:
         print("Oh no! I found the treasure but its too dark to see!")
+
+
+# Task 3 Default path i had the redo some of my previous code for this to work properly i changed my original else statements to elifs and then for the unknown user input error pass statements i used else and pass
+place = input("Choose a place: forest or cave? ")
+action = input("climb a tree or cross a river?")
+
+if place == "forest":
+    if action == "climb a tree":
+        print("You found a bird's nest!")
+    elif action == "cross a river":
+        print("You found a boat!")
+    else:
+        pass #this is for the invalid user input    
+elif place == "cave":
+    print("You find a hidden treasure!")
+    user_choice = input("light a torch or proceed in the dark?: ")
+    if user_choice == ("light a torch"):
+        print("Great you can see the treasure clearly now!")
+    elif user_choice == "proceed in the dark":
+        print("Oh no! I found the treasure but its too dark to see!")
+    else:
+        pass #this is also for invalid user input where input is wanted
+else:
+    pass #to handle overall user input error
