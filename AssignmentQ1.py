@@ -30,6 +30,8 @@ elif place == "cave":
     #Task 2
     #Expand the game aske the user if they choose cave if they want to light a torch or proceed int he dark and provide feedback responses for each decision
 
+#solution: I aded an input for user_choice inside of the cave elif and then and if statement dependent upon the user input "Light a torch" with a response and then and else statement for any other user input other than light a torch.
+
     place = input("Choose a place: forest or cave? ")
 action = input("climb a tree or cross a river?")
 
