@@ -13,3 +13,14 @@ attendees = int(input("Enter number of attendees: "))
 venue = "large hall" if attendees > 100 else "conference room"
 print(venue)
 
+#Task 2
+
+#solution: i hope i did this properly i tried a few other ways and ultimately settled on this just adding the 2 new strings with if and else with outputs per choice based on attendees
+attendees = int(input("Enter number of attendees: "))
+venue = "large hall" if attendees > 100 else "conference room"
+print(venue)
+audio_system = "Stage speaker setup" if attendees > 100 else "small speaker setup"
+projector = "premium projector and large screen" if attendees > 100 else "cheap projector with the normal screen size"
+print("This is the audio/video setup we will use.")
+print(audio_system)
+print(projector)
