@@ -26,3 +26,22 @@ if place == "forest":
         print("You found a boat!")
 elif place == "cave":
     print("You find a hidden treasure!")
+
+    #Task 2
+    #Expand the game aske the user if they choose cave if they want to light a torch or proceed int he dark and provide feedback responses for each decision
+
+    place = input("Choose a place: forest or cave? ")
+action = input("climb a tree or cross a river?")
+
+if place == "forest":
+    if action == "climb a tree":
+        print("You found a bird's nest!")
+    else:
+        print("You found a boat!")
+elif place == "cave":
+    print("You find a hidden treasure!")
+    user_choice = input("light a torch or proceed in the dark?: ")
+    if user_choice == ("light a torch"):
+        print("Great you can see the treasure clearly now!")
+    else:
+        print("Oh no! I found the treasure but its too dark to see!")
